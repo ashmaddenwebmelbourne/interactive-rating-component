@@ -7,8 +7,6 @@ import Submit from './components/Submit';
 import ThankYou from './components/ThankYou';
 import './App.css';
 
-// Set up basic markup and functionality without styling
-
 function App() {
 	const [showThankYouScreen, setShowThankYouScreen] = useState(false);
 	const [selectedScore, setSelectedScore] = useState<number | null>(null);

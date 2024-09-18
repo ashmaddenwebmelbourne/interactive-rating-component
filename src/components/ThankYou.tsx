@@ -3,13 +3,17 @@ import Score from './Score';
 import Title from './Title';
 import Description from './Description';
 
-const ThankYou = () => {
+type ThankYouProps = {
+	selectedScore: number | null;
+};
+
+const ThankYou = ({ selectedScore }: ThankYouProps): JSX.Element => {
 	return (
 		<div>
 			<img src={thankYouIcon} alt='' aria-hidden='true' />
-			<Score />
-			<Title />
-			<Description />
+			<Score selectedScore={selectedScore} />
+			<Title content='Thank you!' />
+			<Description content='We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!' />
 		</div>
 	);
 };

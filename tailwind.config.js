@@ -9,6 +9,9 @@ export default {
 			backgroundImage: {
 				'background-gradient': 'radial-gradient(circle, #232A34 0%, #181E27 100%)',
 			},
+			screens: {
+				tablet: '768px',
+			},
 		},
 		colors: {
 			'dark-blue': '#262E38',
